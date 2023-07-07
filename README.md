@@ -9,4 +9,5 @@ You can find the following information here:
 </br> (d) Project settings - dbt_project.yml
 
 The final model for the DA is the transactions model
+</br>
 Prepared by Adebowale Falode
