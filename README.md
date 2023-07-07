@@ -1,6 +1,6 @@
 # glbpay dbt Project
 
-The dbt project can be found inside the inside the glb_pay folder.
+The dbt project can be found inside the inside the glbpay folder.
 
 You can find the following information here:
 </br> (a) Documentation + Preliminary exploration + Lineage graph can be found in the README.md file in the dbt project
