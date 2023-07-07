@@ -8,7 +8,7 @@ chargeback_report – Count: 5430
 </br>
 </br>
 <b>Time range </b> - Data is from January 2019 to June 2019
-external_ref serves as a unique key on both tables
+</br>external_ref serves as a unique key on both tables
 </br> </br>
 All external_ref on the acceptance_report can be found in the chargeback_report.
 </br> </br>
