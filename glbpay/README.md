@@ -33,7 +33,7 @@ Each subfolder contains model definitions
 ![image](https://github.com/debofalz/glbpay/assets/12761971/c5a4287d-5239-4e0f-8f7d-50c525e5cfb9)
 
 ## Tips around macros, data validation and documentation
-Macros – My dbt project contain a macro although not used. I had 2 opportunities to use a macro.
+Macros – I had 2 opportunities to use a macro.
 </br>(a)	Dynamically unpacking the JSON, and set the currency to be the key column. Built it but I was erroring out plus Bigquery forces you to use string literals. I left it as not to waste time. But I know there is an opportunity there as it ensures It is not hardcoded the way it is now with “CASE WHEN” and is built to future proof future additions
 </br>
 </br>(b)	Set unique code – I avoided this because external ref was unique despite all the joins and so no need to implement this
