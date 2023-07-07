@@ -24,9 +24,9 @@ I noticed rates changed across different transactions, which makes sense, as rat
 
 ## Summary of Model Architecture
 Stage -> Intermediate -> Mart
-Stage – contains data from the source (which is a Bigquery for this assessment). Datasets are stored as views
-Intermediate – contains the model used to unpack the rates(JSON) and set each transaction amount to its USD equivalent
-Mart – contains the production ready finalized model to the data analyst.
+</br>Stage – contains data from the source (which is a Bigquery for this assessment). Datasets are stored as views
+</br>Intermediate – contains the model used to unpack the rates(JSON) and set each transaction amount to its USD equivalent
+</br>Mart – contains the production ready finalized model to the data analyst.
 Each subfolder contains model definitions
 
 ## Lineage Graphs
