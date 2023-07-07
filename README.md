@@ -1,4 +1,4 @@
-# glbpay
+# glbpay dbt Project
 
 The dbt model can be found inside the inside the glb_pay folder.
 
