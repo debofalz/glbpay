@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: source
+    dataset: source
+    description:  This is data sources from globepay
+
+    tables:
+      - name: acceptance_report
+      - name: chargeback_report

@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: stg_chargeback
+    columns:
+      - name: external_ref
+        description: Unique identifier
+        test:
+          - not_null
+          - unique
+          - relationships:
+              to: ref('stg_acceptance')
+              field: external_ref
+      - name: status
+        description: unknown column - Value is always true
+      - name: source
+        description: shows the source of payment platform - always GLOBALPAY
+      - name: chargeback
+        description: if the transaction has been charged back
+
+
+
+
+  - name: stg_acceptance
+    columns:
+      - name: external_ref
+        description: unique identifier of column, currently serves as PK
+        tests:
+          - not_null
+          - unique
+      - name: state
+        description: The binary state of the transaction.
+        tests:
+          - accepted_values:
+              values: ['ACCEPTED', 'DECLINED']
+      - name: status
+        description: unknown column - Value is always true
+      - name: ref
+        description: unique identifier
+      - name: created_date
+        description: stripped date from the datetime of transaction
+      - name: created_time
+        description: stripped time from the datetime of transaction
+      - name: cvv_provided
+        description: contains if cvv was cvv_provided. True or false
+      - name: amount
+        description: contains amount in local currency of transaction
+      - name: country
+        description: country transaction originated from
+      - name: currency
+        description: local currencyused to initiate transaction
+      - name: rates
+        description: JSON containing rates when the transaction was done

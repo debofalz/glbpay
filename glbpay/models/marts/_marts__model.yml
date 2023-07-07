@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: transactions
+    columns:
+      - name: external_ref
+        description: unique indentifier of transactions
+        test:
+          - not_null
+          - unique
+      - name: state
+        description: The binary state of the transaction
+      - name: created_date
+        description: date transaction was done
+      - name: country
+        description: country transaction was initiated from
+      - name: amount_usd
+        description: transaction amount in US Dollars
+      - name: chargeback
+        description: If the transaction has been chargedback.
